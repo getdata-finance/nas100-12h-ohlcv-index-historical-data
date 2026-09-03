@@ -1,10 +1,10 @@
-# NAS100 12h OHLCV Stock index Historical Data — Free Sample
+# NAS100 12h OHLCV Index Historical Data — Free Sample
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Dataset rows](https://img.shields.io/badge/full_dataset-10_185_rows-blue)](https://getdata.finance/datasets/nas100) [![Updated](https://img.shields.io/badge/weekly_update-every_Saturday_8am_UTC-green)](https://getdata.finance) [![Full data on getdata.finance](https://img.shields.io/badge/download-getdata.finance-orange)](https://getdata.finance/datasets/nas100)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Dataset rows](https://img.shields.io/badge/full_dataset-10_209_rows-blue)](https://getdata.finance/datasets/nas100) [![Updated](https://img.shields.io/badge/weekly_update-every_Saturday_8am_UTC-green)](https://getdata.finance) [![Full data on getdata.finance](https://img.shields.io/badge/download-getdata.finance-orange)](https://getdata.finance/datasets/nas100)
 
 ### -> [**Download the full NAS100 dataset on getdata.finance**](https://getdata.finance/datasets/nas100)
 
-**NAS100 12h OHLCV stock index historical data** — ultra high-quality 12h OHLCV for **Nasdaq 100**. Global cash and extended index sessions — Asia, Europe and US coverage, not US-hours only. Clean `datetime, open, high, low, close, volume` CSV for backtesting, algorithmic trading and quantitative research.
+**NAS100 12h OHLCV index historical data** — ultra high-quality 12h OHLCV for **NASDAQ 100**. Clean `time, open, high, low, close, volume` CSV for backtesting, algorithmic trading and quantitative research.
 
 ## Table of contents
 
@@ -21,14 +21,13 @@
 
 ## Why this dataset?
 
-- **Ultra high-quality 12h OHLCV** for **Nasdaq 100** (Stock index)
-- **Global cash and extended index sessions — Asia, Europe and US coverage, not US-hours only**
-- **Clean CSV schema** — `datetime, open, high, low, close, volume` (no gaps in formatting)
-- **Free evaluation sample** on GitHub (`12h`) · **11 timeframes** on [getdata.finance](https://getdata.finance/datasets/nas100) · **10,185** `1m` rows in the full archive
+- **Ultra high-quality 12h OHLCV** for **NASDAQ 100** (Index)
+- **Clean CSV schema** — `time, open, high, low, close, volume` (no gaps in formatting)
+- **Free evaluation sample** on GitHub (`12h`) · **11 timeframes** on [getdata.finance](https://getdata.finance/datasets/nas100) · **10,209** `12h` rows in the full archive
 - Built for **backtesting**, **algorithmic trading** and **quantitative finance** workflows
 - **Weekly refresh** — [getdata.finance](https://getdata.finance) every **Saturday, 8am UTC+0**; GitHub `12h` sample updated in sync
 
-> **Sample on GitHub** · `NAS100_12h.csv` (573 rows, `2025-07-30` -> `2026-07-31`). **Full archive on [getdata.finance](https://getdata.finance/datasets/nas100)** — **10,185** `1m` rows (~0.73 MB), **11 timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W), `2008-08-19` -> `2026-07-31`.
+> **Sample on GitHub** · `NAS100_12h.csv` (89 rows, `2026-07-08` -> `2026-09-02`, 6.73 KB). **Full archive on [getdata.finance](https://getdata.finance/datasets/nas100)** — **10,209** `12h` rows (full `1m`: 5,592,542), **11 timeframes**, `2008-08-19` -> `2026-09-02`.
 
 ## Download sample
 
@@ -44,11 +43,11 @@ Full archive & live chart on getdata.finance: **[https://getdata.finance/dataset
 
 | | **Sample (this repo)** | **Full dataset ([getdata.finance](https://getdata.finance/datasets/nas100))** |
 |---|--:|---|
-| Instrument | Nasdaq 100 · Stock index | Nasdaq 100 · Stock index |
+| Instrument | NASDAQ 100 · Index | NASDAQ 100 · Index |
 | Timeframes | `12h` (sample) | **11** — 1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W |
-| 1m rows | 573 | **10,185** |
-| Size | 0.05 MB | ~0.73 MB |
-| Period | `2025-07-30` -> `2026-07-31` | `2008-08-19` -> `2026-07-31` |
+| 12h rows | 89 | **10,209** |
+| Size | 6.73 KB | full ZIP on [getdata.finance](https://getdata.finance/datasets/nas100) |
+| Period | `2026-07-08` -> `2026-09-02` | `2008-08-19` -> `2026-09-02` |
 | File | `NAS100_12h.csv` | ZIP on [getdata.finance](https://getdata.finance/datasets/nas100) |
 | Coverage report | — | [NAS100 coverage](https://getdata.finance/coverage/nas100) |
 | Updates | Weekly (Saturday, 8am UTC+0) — GitHub sample | Weekly (Saturday, 8am UTC+0) — all timeframes |
@@ -57,7 +56,7 @@ Full archive & live chart on getdata.finance: **[https://getdata.finance/dataset
 
 This GitHub repository ships a **`12h` evaluation sample** only. On **[getdata.finance](https://getdata.finance/datasets/nas100)**, each full asset archive is delivered as a ZIP with **11 gap-free OHLCV timeframes** (one CSV per timeframe):
 
-**1m** · **3m** · **5m** · **15m** · **30m** · **1H** · **4H** · **12H** · **1D** · **3D** · **1W**
+**1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W**
 
 GitHub = `12h` sample · [getdata.finance](https://getdata.finance/datasets/nas100) = all **11** timeframes above for the same instrument.
 
@@ -74,29 +73,29 @@ First and latest rows from the GitHub sample **`NAS100_12h.csv`**:
 
 **First rows**
 
-| datetime | open | high | low | close | volume |
+| time | open | high | low | close | volume |
 | --- | --- | --- | --- | --- | --- |
-| 2025-07-30T12:00:00+00:00 | 23393.86 | 23627.21 | 23243.16 | 23611.91 | 770687 |
-| 2025-07-31T00:00:00+00:00 | 23611.91 | 23731.79 | 23599.29 | 23650.16 | 130896 |
-| 2025-07-31T12:00:00+00:00 | 23650.16 | 23695.66 | 23131.89 | 23188.02 | 1103630 |
-| 2025-08-01T00:00:00+00:00 | 23188.02 | 23232.02 | 22921.39 | 23015.14 | 311477 |
-| 2025-08-01T12:00:00+00:00 | 23015.14 | 23055.77 | 22674.19 | 22767.94 | 1384356 |
+| 2026-07-08T00:00:00+00:00 | 29249.91 | 29345.53 | 28722.98 | 29180.31 | 1372578 |
+| 2026-07-08T12:00:00+00:00 | 29180.31 | 29398.49 | 28848.18 | 29265.24 | 1841253 |
+| 2026-07-09T00:00:00+00:00 | 29265.24 | 29746.64 | 29212.36 | 29726.76 | 1024302 |
+| 2026-07-09T12:00:00+00:00 | 29726.76 | 29809.26 | 29430.14 | 29708.64 | 1226950 |
+| 2026-07-10T00:00:00+00:00 | 29708.64 | 29785.16 | 29532.96 | 29739.16 | 854761 |
 
 **Last rows**
 
-| datetime | open | high | low | close | volume |
+| time | open | high | low | close | volume |
 | --- | --- | --- | --- | --- | --- |
-| 2026-07-29T12:00:00+00:00 | 27883.32 | 27979.22 | 27087.95 | 27411.94 | 2954622 |
-| 2026-07-30T00:00:00+00:00 | 27411.94 | 27627.57 | 27227.94 | 27607.32 | 1294165 |
-| 2026-07-30T12:00:00+00:00 | 27607.32 | 28324.44 | 27578.82 | 28302.31 | 2203947 |
-| 2026-07-31T00:00:00+00:00 | 28302.31 | 28519.56 | 28269.06 | 28432.94 | 799790 |
-| 2026-07-31T12:00:00+00:00 | 28432.94 | 28604.84 | 27960.21 | 28267.39 | 2323051 |
+| 2026-08-31T00:00:00+00:00 | 29281.19 | 29492.19 | 29244.31 | 29397.34 | 789192 |
+| 2026-08-31T12:00:00+00:00 | 29397.34 | 29494.59 | 29313.21 | 29458.61 | 1010919 |
+| 2026-09-01T00:00:00+00:00 | 29458.61 | 29529.24 | 29000.01 | 29063.81 | 908546 |
+| 2026-09-01T12:00:00+00:00 | 29063.81 | 29276.26 | 28962.26 | 29038.3 | 1125734 |
+| 2026-09-02T00:00:00+00:00 | 29038.3 | 29039.8 | 29037.8 | 29038.3 | 222 |
 
 ## Schema
 
 | Column | Description |
 | --- | --- |
-| `datetime` | Bar open timestamp (UTC, ISO-8601). |
+| `time` | Bar open timestamp (UTC, ISO-8601). |
 | `open` | Opening price of the candlestick bar. |
 | `high` | Highest price during the bar. |
 | `low` | Lowest price during the bar. |
@@ -104,7 +103,7 @@ First and latest rows from the GitHub sample **`NAS100_12h.csv`**:
 | `volume` | Tick volume (number of price updates) during the bar. |
 
 ```text
-datetime,open,high,low,close,volume
+time,open,high,low,close,volume
 ```
 
 ## Code examples
@@ -114,11 +113,9 @@ datetime,open,high,low,close,volume
 ```python
 import pandas as pd
 
-df = pd.read_csv('NAS100_12h.csv', parse_dates=['datetime'])
-df.set_index('datetime', inplace=True)
+df = pd.read_csv('NAS100_12h.csv', parse_dates=['time'])
+df.set_index('time', inplace=True)
 print(df.describe())
-print(df.resample('1h').agg({'open': 'first', 'high': 'max',
-                              'low': 'min', 'close': 'last', 'volume': 'sum'}).head())
 ```
 
 ### backtrader
@@ -127,8 +124,8 @@ print(df.resample('1h').agg({'open': 'first', 'high': 'max',
 import backtrader as bt
 import pandas as pd
 
-df = pd.read_csv('NAS100_12h.csv', parse_dates=['datetime'])
-df.set_index('datetime', inplace=True)
+df = pd.read_csv('NAS100_12h.csv', parse_dates=['time'])
+df.set_index('time', inplace=True)
 
 class PandasData(bt.feeds.PandasData):
     params = (('datetime', None), ('open', 'open'), ('high', 'high'),
@@ -146,20 +143,20 @@ cerebro.adddata(PandasData(dataname=df))
 import pandas as pd
 import vectorbt as vbt
 
-df = pd.read_csv('NAS100_12h.csv', parse_dates=['datetime'])
-close = df.set_index('datetime')['close']
+df = pd.read_csv('NAS100_12h.csv', parse_dates=['time'])
+close = df.set_index('time')['close']
 fast, slow = vbt.MA.run(close, 10), vbt.MA.run(close, 50)
 entries = fast.ma_crossed_above(slow)
 exits = fast.ma_crossed_below(slow)
-pf = vbt.Portfolio.from_signals(close, entries, exits, init_cash=10_000, freq='1min')
+pf = vbt.Portfolio.from_signals(close, entries, exits, init_cash=10_000, freq='12h')
 print(pf.stats())
 ```
 
 ## Download full data
 
-The complete **NAS100** archive on **[getdata.finance](https://getdata.finance/datasets/nas100)** includes **11 OHLCV timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W) — **10,185** rows at `1m`, plus all other timeframes in the same ZIP.
+The complete **NAS100** archive on **[getdata.finance](https://getdata.finance/datasets/nas100)** includes **11 OHLCV timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W) — **10,209** rows at `12h`, plus all other timeframes in the same ZIP.
 
 **[-> Get the full NAS100 dataset on getdata.finance](https://getdata.finance/datasets/nas100)**
 
 ---
-*GetData · NAS100 12h OHLCV sample on GitHub · Full historical data on [getdata.finance](https://getdata.finance/datasets/nas100) · 2026-08-05 UTC*
+*GetData · NAS100 12h OHLCV sample on GitHub · Full historical data on [getdata.finance](https://getdata.finance/datasets/nas100)*
